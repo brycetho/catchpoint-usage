@@ -7,7 +7,7 @@ CatchPoint doesn't allow you to grab your point usage via their API. This contai
 docker run --rm \
 -e CPUSER=user@example.com \
 -e CPPASS=super-secret-password \
-brycetho/docker-soup
+brycetho/catchpoint-usage
 ```
 
 ### Environment Variables:
