@@ -32,7 +32,7 @@ p = s.post(login_url, data=data)
 # get account activity page after login
 act = s.get(activity_url)
 act_soup = BeautifulSoup(act.content, "html5lib")
-print("points_used =",
+print("points_used=" +
     act_soup.find(id='DetailContentPlaceholder_ContractInfo_UsedThisMonth_0').text)
-print("contracted_monthly =",
+print("contracted_monthly=" +
     act_soup.find(id="DetailContentPlaceholder_ContractInfo_ContractedMonthly_0").text)
